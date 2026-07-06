@@ -1,0 +1,26 @@
+# Python & Jupyter
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.ipynb_checkpoints/
+
+# Data & Images (PENTING: Jangan upload gambar mentah jika banyak/copyright)
+Data/raw_images/
+*.jpg
+*.png
+*.jpeg
+*.mp4
+*.avi
+
+# Labelbox & Temp Files
+labelbox_export_*.json
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env
