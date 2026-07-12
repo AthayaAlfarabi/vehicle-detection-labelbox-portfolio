@@ -33,8 +33,25 @@ We used a **flat multi-class approach** with 4 distinct vehicle types for optima
 
 ## 🛠️ Tools & Technologies
 - **Annotation Tool:** Labelbox
-- **Dataset Source:** Dashcam footage (Indonesian roads)
+- **Dataset Source:** Dashcam footage
 - **Export Format:** COCO, YOLO
 - **Analysis:** Python, Pandas, Matplotlib
 
 ## 📁 Repository Structure
+```text
+vehicle-detection-labelbox-portfolio/
+├── data/
+│   └── annotations/          # Folder berisi file export JSON dari Labelbox
+│       └── export_coco.json  # File anotasi utama (format NDJSON/COCO)
+├── docs/
+│   └── annotation_guidelines.pdf # Dokumentasi aturan labeling (Ontology & Rules)
+── images/
+│   ├── Pias (526).jpg        # Sample gambar asli untuk visualisasi
+│   ├── Pias (520).jpg
+│   ── visualization_result.png # Hasil output script visualisasi bounding box
+├── notebooks/
+│   └── eda_labelbox.ipynb    # Notebook untuk analisis statistik dataset (EDA)
+├── scripts/
+│   ── visualize_annotations.py # Script Python untuk memvisualisasikan hasil label
+├── .gitignore                # Konfigurasi file/folder yang diabaikan oleh Git
+└── README.md                 # Dokumentasi utama proyek ini
