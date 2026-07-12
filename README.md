@@ -41,17 +41,17 @@ We used a **flat multi-class approach** with 4 distinct vehicle types for optima
 ```text
 vehicle-detection-labelbox-portfolio/
 ├── data/
-│   └── annotations/          # Folder berisi file export JSON dari Labelbox
-│       └── export_coco.json  # File anotasi utama (format NDJSON/COCO)
-├── docs/
-│   └── annotation_guidelines.pdf # Dokumentasi aturan labeling (Ontology & Rules)
-── images/
-│   ├── Pias (526).jpg        # Sample gambar asli untuk visualisasi
+│   └── annotations/          # Contains exported annotation files from Labelbox
+│       └── export_coco.json  # Main annotation file in NDJSON/COCO format
+── docs/
+│   └── annotation_guidelines.pdf # Comprehensive guidelines for labeling consistency (Ontology & Rules)
+├── images/
+│   ├── Pias (526).jpg        # Sample raw images used for visualization demo
 │   ├── Pias (520).jpg
-│   ── visualization_result.png # Hasil output script visualisasi bounding box
+│   └── visualization_result.png # Output image showing bounding boxes on sample data
 ├── notebooks/
-│   └── eda_labelbox.ipynb    # Notebook untuk analisis statistik dataset (EDA)
+│   └── eda_labelbox.ipynb    # Jupyter Notebook for Exploratory Data Analysis (EDA) and class distribution stats
 ├── scripts/
-│   ── visualize_annotations.py # Script Python untuk memvisualisasikan hasil label
-├── .gitignore                # Konfigurasi file/folder yang diabaikan oleh Git
-└── README.md                 # Dokumentasi utama proyek ini
+│   └── visualize_annotations.py # Python script to parse JSON and visualize bounding boxes on images
+├── .gitignore                # Git configuration to exclude large raw datasets and temporary files
+└── README.md                 # Main documentation file for the project
