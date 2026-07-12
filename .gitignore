@@ -1,19 +1,10 @@
 # Python & Jupyter
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
 .ipynb_checkpoints/
 
-# Data & Images (PENTING: Jangan upload gambar mentah jika banyak/copyright)
-Data/raw_images/
-*.jpg
-*.png
-*.jpeg
+# Data & Images (PENTING: Jangan upload gambar mentah jika banyak)
+data/raw_images/
 *.mp4
 *.avi
 
