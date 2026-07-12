@@ -1,7 +1,15 @@
 # 🚗 Vehicle Detection Dataset - Labelbox Portfolio
 
 ## 📋 Overview
-This project involves the creation of a custom vehicle detection dataset using **Labelbox**. The dataset consists of **2,357 dashcam images** captured from Indonesian roads, annotated with a multi-class ontology to support object detection models like YOLOv8.
+This project involves the creation of a custom vehicle detection dataset using **Labelbox**. The dataset consists of **931 dashcam images** captured from some roads, annotated with a multi-class ontology to support object detection models like YOLOv8.
+
+## 🖼️ Sample Visualization
+
+Below is a sample of the annotated dataset showing multi-class vehicle detection with color-coded bounding boxes:
+
+![Visualization Result](images/visualization_result.png)
+
+*🟡 Yellow: Truck | 🟢 Green: Bus | 🔵 Blue: Car*
 
 ## 🎯 Project Goals
 - Build a high-quality annotated dataset for vehicle detection in local traffic conditions.
@@ -9,7 +17,7 @@ This project involves the creation of a custom vehicle detection dataset using *
 - Provide a clean, structured dataset ready for training computer vision models.
 
 ## ️ Annotation Schema
-We used a **flat multi-class approach** with 4 distinct vehicle types for optimal model performance:
+We used a **flat multi-class approach** with 3 distinct vehicle types for optimal model performance:
 
 | Class | Bounding Box Color | Description |
 |-------|-------------------|-------------|
@@ -23,13 +31,15 @@ We used a **flat multi-class approach** with 4 distinct vehicle types for optima
 - Granular evaluation metrics per class
 
 ## 📊 Dataset Statistics
-- **Total Images:** 2,357
-- **Annotation Format:** COCO JSON / YOLO TXT (available in `/data/annotations`)
-- **Class Distribution:**
-  - Car: ~XX% *(Update after labeling)*
-  - SUV: ~XX%
-  - Bus: ~XX%
-  - Truck: ~XX%
+*   **Total Uploaded Images:** 931
+*   **Currently Labeled Subset:** 50 images *(Initial Quality Assurance Sample)*
+*   **Annotation Format:** COCO JSON / YOLO TXT
+*   **Class Distribution (Based on Labeled Subset):**
+    *   🚛 **Truck:** ~80% (Dominant in current sample due to dashcam perspective)
+    *   🚌 **Bus:** ~20%
+    *    **Car:** 0% *(Not present in this specific batch)*
+
+> ️ **Note:** The statistics above reflect only the initial 50 annotated images used for pipeline validation and visualization demonstration. Full dataset labeling is ongoing to achieve a balanced distribution across all vehicle classes for model training.
 
 ## 🛠️ Tools & Technologies
 - **Annotation Tool:** Labelbox
